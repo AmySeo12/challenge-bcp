@@ -1,0 +1,17 @@
+<div>
+    <div class="container-card" *ngFor="let agency of agencies" (click)="navigate(agency.id)">
+        <div class="img-location">
+            <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="card-info">
+            <h5>{{agency.agencia}}</h5>
+            <p>{{agency.departamento}}</p>
+            <span>{{agency.direccion}}</span>
+        </div>
+        <div class="favorite">
+            <button (click)="$event.stopPropagation();selectFavorite(agency)">
+                <i [ngClass]="{'fa-star': agency.favorite, 'fa-star-o': !agency.favorite, 'color-orange': agency.favorite}" class="fa"></i>
+            </button>
+        </div>
+    </div>
+</div>

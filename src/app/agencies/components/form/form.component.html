@@ -1,0 +1,27 @@
+<div>
+    <form [formGroup]="form">
+        <div>
+            <label for="agencia">Nombre de Agencia</label>
+            <input id="agencia" type="text" formControlName="agencia" [ngClass]="{'invalid': isFieldValid('agencia')}">
+        </div>
+        <div>
+            <label for="direccion">Dirección</label>
+            <input id="direccion" type="text" formControlName="direccion" [ngClass]="{'invalid': isFieldValid('direccion')}">
+        </div>
+        <div>
+            <label for="distrito">Distrito</label>
+            <input id="agencia" type="text" formControlName="distrito" [ngClass]="{'invalid': isFieldValid('distrito')}">
+        </div>
+        <div>
+            <label for="lat">Latitud</label>
+            <input id="lat" type="text" formControlName="lat" [ngClass]="{'invalid': isFieldValid('lat')}">
+        </div>
+        <div>
+            <label for="lon">Longitud</label>
+            <input id="lon" type="text" formControlName="lon" [ngClass]="{'invalid': isFieldValid('lon')}">
+        </div>
+        <div class="btn-container">
+            <button (click)="update()" [disabled]="form.invalid">Actualizar</button>
+        </div>
+    </form>
+</div>

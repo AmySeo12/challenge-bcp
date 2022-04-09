@@ -1,0 +1,21 @@
+.header {
+    background-color: #002A8D;
+    font-size: 1.5rem;
+    padding: .8rem 1.5rem;
+    div.container-info {
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+    }
+
+    input {
+        width: calc(100% - 32px);
+        border-radius: 20px;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+    }
+}

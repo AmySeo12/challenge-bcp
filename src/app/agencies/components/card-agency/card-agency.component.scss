@@ -1,0 +1,44 @@
+.container-card {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #c3c3c3;
+
+    .color-orange {
+        color: #ff7800;
+    }
+
+    .img-location {
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: #002A8D;
+    }
+
+    .card-info {
+        flex: 0.3333%;
+        font-weight: 600;
+        padding-left: 1rem;
+
+        h5 {
+            margin-bottom: 0;
+            color: #ff7800;
+        }
+
+        span {
+            color: #c4c4c4;
+            font-size: .9rem;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    }
+
+    .favorite {
+        button {
+            border: none;
+            background-color: transparent;
+            font-size: 1.75rem;
+            color: #002A8D;
+        }
+    }
+}

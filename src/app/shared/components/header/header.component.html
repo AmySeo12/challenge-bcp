@@ -1,0 +1,18 @@
+<div class="header">
+    <div class="container-info" *ngIf="showCabecera;else inputSearch">
+        <div>{{title}}</div>
+        <div *ngIf="searchVisible" (click)="showCabecera = false">
+            <i class="fa fa-search pt-2"></i>
+        </div>
+        <div *ngIf="!searchVisible" (click)="close()">
+            <i class="fa fa-close pt-2"></i>
+        </div>
+    </div>
+
+    <ng-template #inputSearch>
+        <input type="text" [formControl]="search">
+        <button (click)="closeSearch()">
+            <i class="fa fa-close pt-2"></i>
+        </button>
+    </ng-template>
+</div>
